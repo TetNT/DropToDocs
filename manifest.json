@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DropToDocs",
+  "version": "1.1.0",
+  "description": "Drop a .doc or .docx file and open it as a Google Doc.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "DropToDocs"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "permissions": ["identity", "storage"],
+  "host_permissions": [
+    "https://www.googleapis.com/*",
+    "https://oauth2.googleapis.com/*"
+  ]
+}

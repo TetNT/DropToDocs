@@ -1,0 +1,10 @@
+# Build output
+dist/
+*.zip
+*.crx
+*.pem
+
+# OS files
+Thumbs.db
+Desktop.ini
+.DS_Store
