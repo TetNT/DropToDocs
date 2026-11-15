@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DropToDocs</title>
+  <meta name="description" content="DropToDocs is a browser extension that opens Word files (.doc, .docx) in Google Docs in one step.">
+  <link rel="icon" href="icon.png">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --accent: #5b4ee6;
+      --rule: #e4e1f5;
+      --panel: #f6f4ff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #16151d;
+        --text: #e9e7f2;
+        --muted: #a8a4b8;
+        --accent: #a99bff;
+        --rule: #2d2a3d;
+        --panel: #1f1d2b;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 64px 16px; }
+    .hero { text-align: center; }
+    .hero img { width: 96px; height: 96px; }
+    h1 { font-size: 40px; line-height: 1.1; margin: 16px 0 8px; letter-spacing: -0.5px; }
+    .tagline { font-size: 20px; color: var(--muted); margin: 0 auto 28px; max-width: 30em; }
+    .badge {
+      display: inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      background: var(--panel);
+      color: var(--accent);
+      font-weight: 600;
+      font-size: 15px;
+    }
+    h2 { font-size: 22px; margin: 56px 0 16px; }
+    ol.steps { list-style: none; counter-reset: step; padding: 0; margin: 0; display: grid; gap: 12px; }
+    ol.steps li {
+      counter-increment: step;
+      display: flex; gap: 14px; align-items: flex-start;
+      background: var(--panel); border-radius: 12px; padding: 16px 18px;
+    }
+    ol.steps li::before {
+      content: counter(step);
+      flex: none; width: 28px; height: 28px; border-radius: 50%;
+      display: grid; place-items: center;
+      background: var(--accent); color: var(--bg); font-weight: 700; font-size: 15px;
+    }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); }
+    footer {
+      margin-top: 64px; padding-top: 20px; border-top: 1px solid var(--rule);
+      color: var(--muted); font-size: 14px;
+      display: flex; flex-wrap: wrap; gap: 8px 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <img src="icon.png" alt="DropToDocs icon">
+      <h1>DropToDocs</h1>
+      <p class="tagline">Drop a Word file in, get a Google Doc out. No downloading, no Drive upload menus.</p>
+      <span class="badge">Coming soon to the Chrome Web Store</span>
+    </section>
+
+    <h2>How it works</h2>
+    <ol class="steps">
+      <li><span>Click the DropToDocs icon in your browser toolbar and sign in with Google once.</span></li>
+      <li><span>Choose or drag in a <code>.doc</code> or <code>.docx</code> file.</span></li>
+      <li><span>It's converted to a Google Doc in your Drive and opens in a new tab, ready to edit.</span></li>
+    </ol>
+
+    <h2>Private by design</h2>
+    <ul>
+      <li>Files go straight from your browser to your own Google Drive. There are no DropToDocs servers.</li>
+      <li>It can only see files it created for you, nothing else in your Drive.</li>
+      <li>No analytics, no tracking, no ads.</li>
+    </ul>
+    <p>Read the full <a href="privacy.html">privacy policy</a>.</p>
+
+    <h2>Works in</h2>
+    <p>Chrome, Microsoft Edge, Brave and Opera.</p>
+
+    <footer>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="mailto:softwaretet@gmail.com">Contact: softwaretet@gmail.com</a>
+      <span>Not affiliated with or endorsed by Google. Google Docs and Google Drive are trademarks of Google LLC.</span>
+    </footer>
+  </main>
+</body>
+</html>

@@ -56,3 +56,29 @@ The redirect URI is tied to the extension ID, so the ID must not change:
 - Chrome Web Store listing needs a privacy policy and the "single purpose" /
   permission justifications (`identity` for sign-in, `storage` for remembering
   the account, Google APIs host access for uploading).
+
+## Icon
+
+The icon is drawn by [tools/make_icons.py](tools/make_icons.py) (needs Python with
+Pillow). To change colors or shapes, edit the script and run
+`python tools/make_icons.py` from the repo root; it rewrites `icons/icon*.png`.
+Copy `icons/icon128.png` to `docs/icon.png` afterwards so the website matches.
+
+## Website (homepage + privacy policy)
+
+`docs/` holds the public pages Google and the Chrome Web Store ask for:
+`docs/index.html` (homepage) and `docs/privacy.html` (privacy policy).
+
+They're served by GitHub Pages from the `main` branch's `/docs` folder
+(**Settings → Pages**). To use your own domain (smoother for Google's
+verification), add it under **Settings → Pages → Custom domain**.
+
+## Packaging for the store
+
+```bash
+python tools/package.py
+```
+
+Writes `dist/DropToDocs-<version>.zip` with only the files the extension needs
+(no `docs/`, `tools/`, README or git files, and any `"key"` field removed from
+the manifest). Upload that zip in the Chrome Developer Dashboard.

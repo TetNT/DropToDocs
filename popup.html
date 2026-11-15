@@ -11,7 +11,8 @@
       color: #202124;
       background: #fff;
     }
-    h1 { font-size: 14px; margin: 0 0 10px; }
+    h1 { display: flex; align-items: center; gap: 8px; font-size: 14px; margin: 0 0 12px; }
+    h1 img { width: 24px; height: 24px; }
     [hidden] { display: none !important; }
 
     #signin {
@@ -54,7 +55,7 @@
   </style>
 </head>
 <body>
-  <h1>DropToDocs</h1>
+  <h1><img src="icons/icon48.png" alt="">DropToDocs</h1>
 
   <section id="signed-out" hidden>
     <button id="signin">
