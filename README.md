@@ -67,11 +67,15 @@ Copy `icons/icon128.png` to `docs/icon.png` afterwards so the website matches.
 ## Website (homepage + privacy policy)
 
 `docs/` holds the public pages Google and the Chrome Web Store ask for:
-`docs/index.html` (homepage) and `docs/privacy.html` (privacy policy).
 
-They're served by GitHub Pages from the `main` branch's `/docs` folder
-(**Settings → Pages**). To use your own domain (smoother for Google's
-verification), add it under **Settings → Pages → Custom domain**.
+- `docs/index.html`: homepage, https://appinbound.com/DropToDocs/
+- `docs/privacy.html`: privacy policy, https://appinbound.com/DropToDocs/privacy.html
+
+They're served by GitHub Pages from this repo's `main` branch, `/docs` folder.
+The `appinbound.com` domain is set on the
+[TetNT.github.io](https://github.com/TetNT/TetNT.github.io) repository; GitHub
+serves this project site under it automatically, so don't set a custom domain
+here.
 
 ## Packaging for the store
 

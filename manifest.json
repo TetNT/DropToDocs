@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "DropToDocs",
-  "version": "1.1.0",
+  "version": "1.1.1",
+  "homepage_url": "https://appinbound.com/DropToDocs/",
   "description": "Drop a .doc or .docx file and open it as a Google Doc.",
   "icons": {
     "16": "icons/icon16.png",
