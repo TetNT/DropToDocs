@@ -1,8 +1,11 @@
 # DropToDocs — browser extension
 
-Click the toolbar icon, sign in with Google once, then pick or drop a
-`.doc`/`.docx`. The file is uploaded to your Google Drive, converted to a Google
-Doc, and opened in a new tab.
+Click the toolbar icon, sign in with Google once, then pick or drop one or more
+Word, Excel or PowerPoint files (`.doc`, `.docx`, `.xls`, `.xlsx`, `.ppt`, `.pptx`).
+Each is uploaded to your Google Drive (into a `DropToDocs` folder by default; the
+folder name, or `Work/Imports`-style path, can be changed, or files can go to the top
+level), converted to a Google Doc, Sheet or Slides presentation, and (if "Open files
+after upload" is ticked) opened in a new tab.
 
 Works in Chrome, Edge, Brave and Opera (it uses `chrome.identity.launchWebAuthFlow`,
 not the Chrome-only `getAuthToken`).

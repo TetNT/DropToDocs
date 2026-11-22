@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <style>
     body {
-      width: 280px;
+      width: 320px;
       margin: 0;
       padding: 14px;
       font: 13px/1.4 system-ui, sans-serif;
@@ -37,18 +37,82 @@
     }
     #signout:hover { text-decoration: underline; }
 
+    #storage { margin: -4px 0 12px; font-size: 12px; color: #5f6368; }
+    #storage .bar { height: 4px; border-radius: 2px; background: #e8eaed; overflow: hidden; margin-bottom: 4px; }
+    #storage .fill { height: 100%; width: 0; border-radius: 2px; background: #1a73e8; transition: width .3s; }
+    #storage.warn .fill { background: #e37400; }
+    #storage.full .fill { background: #d93025; }
+    #storage.full #storage-text { color: #d93025; }
+    #storage b { color: #3c4043; font-weight: 600; }
+
     #drop {
       display: block;
       border: 2px dashed #9aa0a6;
       border-radius: 8px;
-      padding: 22px 10px;
+      padding: 20px 10px;
       text-align: center;
       cursor: pointer;
       transition: background .15s, border-color .15s;
     }
     #drop:hover, #drop.over { background: #e8f0fe; border-color: #1a73e8; }
     #drop.busy { pointer-events: none; opacity: .6; }
+    #drop .types { display: block; margin-top: 4px; color: #5f6368; font-size: 11px; }
     input[type=file] { display: none; }
+
+    #open-option {
+      display: flex; align-items: center; gap: 6px;
+      margin-top: 10px; color: #3c4043; cursor: pointer; user-select: none;
+    }
+    #open-option input { margin: 0; }
+
+    #save-to { margin-top: 10px; color: #3c4043; }
+    #save-to label { display: block; margin-bottom: 4px; }
+    #save-to input {
+      box-sizing: border-box; width: 100%;
+      font: inherit; color: #202124;
+      border: 1px solid #dadce0; border-radius: 4px; padding: 4px 6px; background: #fff;
+    }
+    #save-to input:focus { outline: 2px solid #d2e3fc; border-color: #1a73e8; }
+    #save-to .hint { margin: 3px 0 0; text-align: left; font-size: 11px; }
+    #folder-link { margin: 8px 0 0; }
+    #folder-link button {
+      border: none; background: none; padding: 0;
+      color: #1a73e8; font: inherit; cursor: pointer;
+    }
+    #folder-link button:hover { text-decoration: underline; }
+
+    #files { list-style: none; margin: 10px 0 0; padding: 0; max-height: 220px; overflow-y: auto; }
+    #files li {
+      display: flex; align-items: center; gap: 8px;
+      padding: 6px 0; border-top: 1px solid #f1f3f4;
+    }
+    #files li:first-child { border-top: none; }
+    .kind {
+      flex: none; width: 44px; text-align: center;
+      border-radius: 4px; padding: 1px 0;
+      font-size: 10px; font-weight: 600; color: #fff; background: #9aa0a6;
+    }
+    .kind.document { background: #1a73e8; }
+    .kind.spreadsheet { background: #188038; }
+    .kind.presentation { background: #e37400; }
+    .name { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .state { flex: none; color: #5f6368; font-size: 12px; }
+    .state.error { color: #d93025; }
+    .state button {
+      border: none; background: none; padding: 0;
+      color: #1a73e8; font: inherit; cursor: pointer;
+    }
+    .state button:hover { text-decoration: underline; }
+    li .detail { display: block; color: #d93025; font-size: 11px; white-space: normal; }
+
+    .spinner {
+      display: inline-block; width: 10px; height: 10px; margin-right: 5px;
+      vertical-align: -1px;
+      border: 2px solid #d2e3fc; border-top-color: #1a73e8; border-radius: 50%;
+      animation: spin .8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @media (prefers-reduced-motion: reduce) { .spinner { animation-duration: 2s; } }
 
     #status { margin-top: 10px; min-height: 18px; }
     #status.error { color: #d93025; }
@@ -67,7 +131,7 @@
       </svg>
       Sign in with Google
     </button>
-    <p class="hint">Files are added to your Google Drive and opened in Docs.</p>
+    <p class="hint">Files are added to your Google Drive and opened in Docs, Sheets or Slides.</p>
   </section>
 
   <section id="signed-in" hidden>
@@ -75,10 +139,27 @@
       <span id="email"></span>
       <button id="signout">Sign out</button>
     </div>
+    <div id="storage" hidden>
+      <div class="bar"><div class="fill"></div></div>
+      <span id="storage-text"></span>
+    </div>
     <label id="drop">
-      Click to choose, or drop a .doc / .docx file here
-      <input id="file" type="file" accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+      Click to choose, or drop files here
+      <span class="types">Word, Excel and PowerPoint: .doc .docx .xls .xlsx .ppt .pptx</span>
+      <input id="file" type="file" multiple accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation">
     </label>
+    <label id="open-option">
+      <input id="open-after" type="checkbox" checked>
+      Open files after upload
+    </label>
+    <div id="save-to">
+      <label for="folder-name">Save to</label>
+      <input id="folder-name" type="text" maxlength="200" placeholder="My Drive (top level)" spellcheck="false"
+             aria-describedby="folder-hint">
+      <p id="folder-hint" class="hint">Folder name in My Drive. Use / for subfolders. Leave empty for the top level.</p>
+    </div>
+    <ul id="files"></ul>
+    <p id="folder-link" hidden><button id="open-folder">Open folder in Drive ↗</button></p>
   </section>
 
   <div id="status"></div>

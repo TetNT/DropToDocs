@@ -58,7 +58,7 @@
       <img src="icon.png" alt="">
       <h1>DropToDocs Privacy Policy</h1>
     </header>
-    <p class="updated">Last updated: November 15, 2026</p>
+    <p class="updated">Last updated: November 22, 2026</p>
 
     <div class="summary">
       <p>In short</p>
@@ -70,24 +70,26 @@
     </div>
 
     <h2>What DropToDocs does</h2>
-    <p>DropToDocs is a browser extension. When you choose or drop a Word file (<code>.doc</code> or <code>.docx</code>), it uploads that file to your Google Drive, asks Google to convert it to a Google Doc, and opens the new document in a tab.</p>
+    <p>DropToDocs is a browser extension. When you choose or drop Word, Excel or PowerPoint files (<code>.doc</code>, <code>.docx</code>, <code>.xls</code>, <code>.xlsx</code>, <code>.ppt</code>, <code>.pptx</code>), it uploads them to your Google Drive (into a folder of your choice, or the top level), asks Google to convert them to Google Docs, Sheets or Slides, and, if you choose, opens them in new tabs.</p>
 
     <h2>Information the extension uses</h2>
     <ul>
       <li><strong>Your Google account email address.</strong> Used only to show which account you are signed in with, and to sign you back in without asking again. It is stored in your browser's extension storage on your device.</li>
       <li><strong>A temporary Google access token.</strong> Lets the extension upload files to your Drive on your behalf. It lasts about an hour, is kept only in your browser's session storage, and is erased when you sign out or close the browser.</li>
       <li><strong>The files you choose.</strong> Read only at the moment you select or drop them, and sent directly to Google Drive. DropToDocs does not keep a copy.</li>
+      <li><strong>Your Google storage usage.</strong> How much of your Google storage is used and available, read from Google Drive only to display it in the popup. It is not stored or sent anywhere.</li>
+      <li><strong>Your settings.</strong> Whether to open files after upload, where to save them, and the ID of the Drive folder DropToDocs created for you. Stored in your browser's extension storage so the popup remembers your choices.</li>
     </ul>
     <p>DropToDocs does not collect your browsing history, the contents of web pages, your location, or any other personal information.</p>
 
     <h2>Google permissions requested</h2>
     <ul>
       <li><code>openid</code> and <code>email</code>: to know which Google account you signed in with.</li>
-      <li><code>https://www.googleapis.com/auth/drive.file</code>: to create files in your Google Drive. This permission only gives access to files that DropToDocs itself creates or that you open with it. It does not allow reading, changing or deleting your other Drive files.</li>
+      <li><code>https://www.googleapis.com/auth/drive.file</code>: to create files and folders in your Google Drive. This permission only gives access to files and folders that DropToDocs itself creates or that you open with it. It does not allow reading, changing or deleting your other Drive files.</li>
     </ul>
 
     <h2>Where your data goes</h2>
-    <p>The extension talks only to Google: <code>accounts.google.com</code> to sign in, and <code>googleapis.com</code> to upload files and read your email address. DropToDocs has no servers of its own and receives none of your data. The documents it creates belong to you and are covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
+    <p>The extension talks only to Google: <code>accounts.google.com</code> to sign in, and <code>googleapis.com</code> to upload files, read your email address, and read your storage usage. DropToDocs has no servers of its own and receives none of your data. The documents it creates belong to you and are covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</p>
 
     <h2>Sharing and selling</h2>
     <p>DropToDocs does not sell, rent, or transfer your data to anyone. It does not use your data for advertising, credit decisions, or any purpose other than the feature described above. No person reads your data.</p>
