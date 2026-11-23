@@ -1,5 +1,7 @@
 # DropToDocs — browser extension
 
+[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/droptodocs/figacbdpfaiopjfiabnmpdbfchjnfndl)
+
 Click the toolbar icon, sign in with Google once, then pick or drop one or more
 Word, Excel or PowerPoint files (`.doc`, `.docx`, `.xls`, `.xlsx`, `.ppt`, `.pptx`).
 Each is uploaded to your Google Drive (into a `DropToDocs` folder by default; the
@@ -9,6 +11,9 @@ after upload" is ticked) opened in a new tab.
 
 Works in Chrome, Edge, Brave and Opera (it uses `chrome.identity.launchWebAuthFlow`,
 not the Chrome-only `getAuthToken`).
+
+Free and open source under the [MIT license](LICENSE). If it saves you time, you can
+[buy me a coffee](https://buymeacoffee.com/appinbound) ☕
 
 ## What users see
 
