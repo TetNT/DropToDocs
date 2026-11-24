@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "DropToDocs",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "homepage_url": "https://appinbound.com/DropToDocs/",
   "description": "Drop Word, Excel or PowerPoint files and open them in Google Docs, Sheets or Slides.",
   "icons": {
