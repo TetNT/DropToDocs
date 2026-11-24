@@ -1,0 +1,140 @@
+{
+  "extDescription": {
+    "message": "Suelta archivos de Word, Excel o PowerPoint y ábrelos en Documentos, Hojas de cálculo o Presentaciones de Google."
+  },
+  "locale": {
+    "message": "es"
+  },
+  "signIn": {
+    "message": "Iniciar sesión con Google"
+  },
+  "signInHint": {
+    "message": "Los archivos se añaden a tu Google Drive y se abren en Documentos, Hojas de cálculo o Presentaciones."
+  },
+  "signedInAs": {
+    "message": "Sesión iniciada como {email}"
+  },
+  "signOut": {
+    "message": "Cerrar sesión"
+  },
+  "dropPrompt": {
+    "message": "Haz clic para elegir o suelta los archivos aquí"
+  },
+  "dropTypes": {
+    "message": "Word, Excel y PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Abrir los archivos después de subirlos"
+  },
+  "saveTo": {
+    "message": "Guardar en"
+  },
+  "folderPlaceholder": {
+    "message": "Mi unidad (nivel superior)"
+  },
+  "folderHint": {
+    "message": "Nombre de una carpeta en Mi unidad. Usa / para subcarpetas. Déjalo vacío para el nivel superior."
+  },
+  "openFolder": {
+    "message": "Abrir carpeta en Drive ↗"
+  },
+  "buyCoffee": {
+    "message": "Invítame a un café"
+  },
+  "sessionExpired": {
+    "message": "Tu sesión ha caducado. Vuelve a iniciar sesión."
+  },
+  "driveAccessNeeded": {
+    "message": "Se necesita acceso a Google Drive para abrir archivos. Vuelve a iniciar sesión y permítelo."
+  },
+  "driveError": {
+    "message": "Error de Google Drive ({status})"
+  },
+  "uploadFailed": {
+    "message": "Error al subir ({status})"
+  },
+  "storageUsed": {
+    "message": "{used} de {total} usados"
+  },
+  "storageFree": {
+    "message": "{free} libres"
+  },
+  "storageFull": {
+    "message": "Almacenamiento lleno"
+  },
+  "storageUsedOnly": {
+    "message": "{used} usados"
+  },
+  "storageNoLimit": {
+    "message": "sin límite de almacenamiento"
+  },
+  "storageTitle": {
+    "message": "El almacenamiento de Google se comparte entre Drive, Gmail y Fotos."
+  },
+  "open": {
+    "message": "Abrir ↗"
+  },
+  "opened": {
+    "message": "Abierto ↗"
+  },
+  "failed": {
+    "message": "Error"
+  },
+  "waiting": {
+    "message": "En espera…"
+  },
+  "uploading": {
+    "message": "Subiendo…"
+  },
+  "skipped": {
+    "message": "Omitido"
+  },
+  "notUploaded": {
+    "message": "No subido"
+  },
+  "notOffice": {
+    "message": "No es un archivo de Word, Excel ni PowerPoint."
+  },
+  "preparingFolder": {
+    "message": "Preparando la carpeta \"{folder}\"…"
+  },
+  "folderError": {
+    "message": "No se pudo abrir la carpeta de destino: {error}"
+  },
+  "uploadingMany_one": {
+    "message": "Subiendo {n} archivo. Mantén esta ventana abierta…"
+  },
+  "uploadingMany_other": {
+    "message": "Subiendo {n} archivos. Mantén esta ventana abierta…"
+  },
+  "summaryFailed": {
+    "message": "Subidos: {ok} de {total}. Con errores: {failed}."
+  },
+  "openedOne": {
+    "message": "Abierto."
+  },
+  "openedAll_one": {
+    "message": "{n} archivo abierto."
+  },
+  "openedAll_other": {
+    "message": "Los {n} archivos están abiertos."
+  },
+  "allInFolder_one": {
+    "message": "El archivo está en \"{folder}\"."
+  },
+  "allInFolder_other": {
+    "message": "Los {n} archivos están en \"{folder}\"."
+  },
+  "allInDrive_one": {
+    "message": "El archivo está en tu Google Drive."
+  },
+  "allInDrive_other": {
+    "message": "Los {n} archivos están en tu Google Drive."
+  },
+  "uploadedToFolder": {
+    "message": "Subido a \"{folder}\"."
+  },
+  "uploadedToDrive": {
+    "message": "Subido a tu Google Drive."
+  }
+}

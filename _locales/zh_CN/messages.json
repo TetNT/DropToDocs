@@ -1,0 +1,128 @@
+{
+  "extDescription": {
+    "message": "拖放 Word、Excel 或 PowerPoint 文件，即可在 Google 文档、表格或幻灯片中打开。"
+  },
+  "locale": {
+    "message": "zh-CN"
+  },
+  "signIn": {
+    "message": "使用 Google 账号登录"
+  },
+  "signInHint": {
+    "message": "文件会添加到您的 Google 云端硬盘，并在 Google 文档、表格或幻灯片中打开。"
+  },
+  "signedInAs": {
+    "message": "已登录：{email}"
+  },
+  "signOut": {
+    "message": "退出"
+  },
+  "dropPrompt": {
+    "message": "点击选择文件，或将文件拖放到此处"
+  },
+  "dropTypes": {
+    "message": "Word、Excel 和 PowerPoint：.doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "上传后打开文件"
+  },
+  "saveTo": {
+    "message": "保存到"
+  },
+  "folderPlaceholder": {
+    "message": "我的云端硬盘（顶层）"
+  },
+  "folderHint": {
+    "message": "“我的云端硬盘”中的文件夹名称。用 / 分隔子文件夹。留空则保存到顶层。"
+  },
+  "openFolder": {
+    "message": "在云端硬盘中打开文件夹 ↗"
+  },
+  "buyCoffee": {
+    "message": "请我喝杯咖啡"
+  },
+  "sessionExpired": {
+    "message": "会话已过期，请重新登录。"
+  },
+  "driveAccessNeeded": {
+    "message": "需要访问 Google 云端硬盘才能打开文件。请重新登录并允许访问。"
+  },
+  "driveError": {
+    "message": "Google 云端硬盘错误（{status}）"
+  },
+  "uploadFailed": {
+    "message": "上传失败（{status}）"
+  },
+  "storageUsed": {
+    "message": "已使用 {used}，共 {total}"
+  },
+  "storageFree": {
+    "message": "剩余 {free}"
+  },
+  "storageFull": {
+    "message": "存储空间已满"
+  },
+  "storageUsedOnly": {
+    "message": "已使用 {used}"
+  },
+  "storageNoLimit": {
+    "message": "无存储空间限制"
+  },
+  "storageTitle": {
+    "message": "Google 存储空间由云端硬盘、Gmail 和相册共享。"
+  },
+  "open": {
+    "message": "打开 ↗"
+  },
+  "opened": {
+    "message": "已打开 ↗"
+  },
+  "failed": {
+    "message": "失败"
+  },
+  "waiting": {
+    "message": "等待中…"
+  },
+  "uploading": {
+    "message": "正在上传…"
+  },
+  "skipped": {
+    "message": "已跳过"
+  },
+  "notUploaded": {
+    "message": "未上传"
+  },
+  "notOffice": {
+    "message": "不是 Word、Excel 或 PowerPoint 文件。"
+  },
+  "preparingFolder": {
+    "message": "正在准备文件夹“{folder}”…"
+  },
+  "folderError": {
+    "message": "无法打开目标文件夹：{error}"
+  },
+  "uploadingMany_other": {
+    "message": "正在上传 {n} 个文件，请勿关闭此窗口…"
+  },
+  "summaryFailed": {
+    "message": "已上传 {ok}/{total} 个，{failed} 个失败。"
+  },
+  "openedOne": {
+    "message": "已打开。"
+  },
+  "openedAll_other": {
+    "message": "已打开全部 {n} 个文件。"
+  },
+  "allInFolder_other": {
+    "message": "全部 {n} 个文件已保存到“{folder}”。"
+  },
+  "allInDrive_other": {
+    "message": "全部 {n} 个文件已保存到您的 Google 云端硬盘。"
+  },
+  "uploadedToFolder": {
+    "message": "已上传到“{folder}”。"
+  },
+  "uploadedToDrive": {
+    "message": "已上传到您的 Google 云端硬盘。"
+  }
+}

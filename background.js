@@ -34,7 +34,7 @@ async function authFlow({ interactive, loginHint }) {
   const token = params.get('access_token');
   // Google lets people untick individual permissions; we can't work without Drive.
   if (!(params.get('scope') || '').split(' ').includes(DRIVE_SCOPE)) {
-    throw new Error('Google Drive access is needed to open files. Please sign in again and allow it.');
+    throw new Error(chrome.i18n.getMessage('driveAccessNeeded'));
   }
 
   const info = await fetch('https://www.googleapis.com/oauth2/v3/userinfo', {

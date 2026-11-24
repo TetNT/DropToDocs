@@ -1,0 +1,39 @@
+Word、Excel、PowerPoint ファイルを、ワンステップで Google ドキュメント、スプレッドシート、スライドで開けます。
+
+DropToDocs は、Google ドライブを経由するいつもの手間なしに、Office ファイルを Google のファイルに変換します。ツールバーのアイコンをクリックして、ファイルを 1 つ、またはまとめてドロップするだけ。Google ドキュメント、スプレッドシート、スライドで開き、すぐに編集・共有・コメントできます。
+
+使い方
+1. DropToDocs のアイコンをクリックし、Google アカウントでログインします（初回のみ）。
+2. ファイルを選ぶか、ポップアップにドラッグします。複数のファイルをまとめてドロップできます。
+3. 各ファイルが Google ドライブにアップロード・変換され、新しいタブで開きます。
+
+対応ファイル
+• Word（.doc、.docx）→ Google ドキュメント
+• Excel（.xls、.xlsx）→ Google スプレッドシート
+• PowerPoint（.ppt、.pptx）→ Google スライド
+
+機能
+• まとめてアップロード：複数のファイルをドロップし、それぞれの進行状況を確認できます。
+• 保存先を指定：デフォルトは「DropToDocs」フォルダ。好きなフォルダ名（「仕事/取り込み」のようなサブフォルダも可）や、マイドライブの最上位も選べます。
+• 自動で開くかどうかを選択：「アップロード後にファイルを開く」をオフにすると、ドライブに保存するだけになり、各ファイルやフォルダ全体を開くリンクが表示されます。
+• Google のストレージを確認：使用量と空き容量をポップアップで確認できます。
+• ログインは一度だけ：一度ログインすれば、そのまま使えます。
+• 12 言語に対応し、ブラウザの言語で表示されます。
+• Chrome、Microsoft Edge、Brave、Opera で動作します。
+
+プライバシーを重視した設計
+• ファイルはブラウザからあなた自身の Google ドライブへ直接送られます。DropToDocs にはサーバーがなく、ファイルが第三者を経由することはありません。
+• DropToDocs が見られるのは、あなたのために作成したファイルとフォルダだけです。ドライブ内のそれ以外のものを読み取り、変更、削除することはできません。
+• 分析、トラッキング、広告は一切ありません。データが販売・共有されることもありません。
+• ポップアップからいつでもログアウトして、アクセス権を取り消せます。
+
+無料・オープンソース
+DropToDocs は無料のオープンソースソフトウェアです（MIT ライセンス）。
+ソースコード: https://github.com/TetNT/DropToDocs
+お役に立ったら、コーヒーをおごっていただけるとうれしいです: https://buymeacoffee.com/appinbound
+
+ウェブサイト: https://appinbound.com/DropToDocs/
+プライバシー ポリシー（英語）: https://appinbound.com/DropToDocs/privacy.html
+ご質問・ご意見: softwaretet@gmail.com
+
+DropToDocs は Google および Microsoft とは提携しておらず、承認も受けていません。Google ドキュメント、Google スプレッドシート、Google スライド、Google ドライブは Google LLC の商標です。Microsoft Word、Excel、PowerPoint は Microsoft Corporation の商標です。

@@ -1,0 +1,39 @@
+Otwieraj pliki Word, Excel i PowerPoint w Dokumentach, Arkuszach i Prezentacjach Google w jednym kroku.
+
+DropToDocs zamienia pliki Office na pliki Google bez zwykłego okrążenia przez Dysk Google. Kliknij ikonę na pasku narzędzi, upuść jeden plik lub kilka naraz, a otworzą się w Dokumentach, Arkuszach lub Prezentacjach Google, gotowe do edycji, udostępniania i komentowania.
+
+JAK TO DZIAŁA
+1. Kliknij ikonę DropToDocs i zaloguj się na konto Google (tylko za pierwszym razem).
+2. Wybierz pliki lub przeciągnij je do okienka. Możesz upuścić kilka naraz.
+3. Każdy plik trafia na Twój Dysk Google, jest konwertowany i otwiera się w nowej karcie.
+
+OBSŁUGIWANE PLIKI
+• Word (.doc, .docx) → Dokumenty Google
+• Excel (.xls, .xlsx) → Arkusze Google
+• PowerPoint (.ppt, .pptx) → Prezentacje Google
+
+FUNKCJE
+• Przesyłanie wielu plików: upuść kilka plików i śledź postęp każdego z nich.
+• Wybór miejsca zapisu: domyślnie folder „DropToDocs”, dowolny wybrany folder (z podfolderami, np. Praca/Import) lub poziom główny Mojego dysku.
+• Automatyczne otwieranie lub nie: odznacz „Otwieraj pliki po przesłaniu”, aby tylko zapisywać pliki na Dysku, z szybkim linkiem do każdego pliku lub całego folderu.
+• Miejsce w Google pod ręką: ile jest zajęte, a ile wolne, prosto w okienku.
+• Bez ponownego logowania: logujesz się raz i gotowe.
+• Dostępne w 12 językach, zgodnie z językiem przeglądarki.
+• Działa w Chrome, Microsoft Edge, Brave i Opera.
+
+PRYWATNOŚĆ OD PODSTAW
+• Twoje pliki trafiają prosto z przeglądarki na Twój własny Dysk Google. DropToDocs nie ma serwerów, a Twoje pliki nigdy nie przechodzą przez osoby trzecie.
+• DropToDocs widzi tylko pliki i foldery, które dla Ciebie utworzył. Nie może odczytać, zmienić ani usunąć niczego innego na Twoim Dysku.
+• Bez analityki, śledzenia i reklam. Twoje dane nigdy nie są sprzedawane ani udostępniane.
+• Wyloguj się w dowolnej chwili w okienku, aby odebrać mu dostęp.
+
+BEZPŁATNE I OTWARTOŹRÓDŁOWE
+DropToDocs jest bezpłatny i ma otwarty kod źródłowy (licencja MIT).
+Kod źródłowy: https://github.com/TetNT/DropToDocs
+Jeśli oszczędza Ci czas, możesz postawić mi kawę: https://buymeacoffee.com/appinbound
+
+Strona: https://appinbound.com/DropToDocs/
+Polityka prywatności (po angielsku): https://appinbound.com/DropToDocs/privacy.html
+Pytania i opinie: softwaretet@gmail.com
+
+DropToDocs nie jest powiązany z Google ani Microsoft ani przez nie wspierany. Dokumenty Google, Arkusze Google, Prezentacje Google i Dysk Google są znakami towarowymi Google LLC. Microsoft Word, Excel i PowerPoint są znakami towarowymi Microsoft Corporation.

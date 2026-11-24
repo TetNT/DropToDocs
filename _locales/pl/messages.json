@@ -1,0 +1,128 @@
+{
+  "extDescription": {
+    "message": "Upuść pliki Word, Excel lub PowerPoint i otwórz je w Dokumentach, Arkuszach lub Prezentacjach Google."
+  },
+  "locale": {
+    "message": "pl"
+  },
+  "signIn": {
+    "message": "Zaloguj się przez Google"
+  },
+  "signInHint": {
+    "message": "Pliki trafiają na Twój Dysk Google i otwierają się w Dokumentach, Arkuszach lub Prezentacjach Google."
+  },
+  "signedInAs": {
+    "message": "Konto: {email}"
+  },
+  "signOut": {
+    "message": "Wyloguj się"
+  },
+  "dropPrompt": {
+    "message": "Kliknij, aby wybrać, lub upuść pliki tutaj"
+  },
+  "dropTypes": {
+    "message": "Word, Excel i PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Otwieraj pliki po przesłaniu"
+  },
+  "saveTo": {
+    "message": "Zapisz w"
+  },
+  "folderPlaceholder": {
+    "message": "Mój dysk (poziom główny)"
+  },
+  "folderHint": {
+    "message": "Nazwa folderu na Moim dysku. Podfoldery oddziel znakiem /. Zostaw puste, aby zapisać na poziomie głównym."
+  },
+  "openFolder": {
+    "message": "Otwórz folder na Dysku ↗"
+  },
+  "buyCoffee": {
+    "message": "Postaw mi kawę"
+  },
+  "sessionExpired": {
+    "message": "Sesja wygasła. Zaloguj się ponownie."
+  },
+  "driveAccessNeeded": {
+    "message": "Do otwierania plików potrzebny jest dostęp do Dysku Google. Zaloguj się ponownie i zezwól na dostęp."
+  },
+  "driveError": {
+    "message": "Błąd Dysku Google ({status})"
+  },
+  "uploadFailed": {
+    "message": "Przesyłanie nie powiodło się ({status})"
+  },
+  "storageUsed": {
+    "message": "Wykorzystano {used} z {total}"
+  },
+  "storageFree": {
+    "message": "wolne: {free}"
+  },
+  "storageFull": {
+    "message": "Brak miejsca"
+  },
+  "storageUsedOnly": {
+    "message": "Wykorzystano {used}"
+  },
+  "storageNoLimit": {
+    "message": "bez limitu miejsca"
+  },
+  "storageTitle": {
+    "message": "Miejsce w Google jest wspólne dla Dysku, Gmaila i Zdjęć."
+  },
+  "open": {
+    "message": "Otwórz ↗"
+  },
+  "opened": {
+    "message": "Otwarto ↗"
+  },
+  "failed": {
+    "message": "Błąd"
+  },
+  "waiting": {
+    "message": "Oczekuje…"
+  },
+  "uploading": {
+    "message": "Przesyłanie…"
+  },
+  "skipped": {
+    "message": "Pominięto"
+  },
+  "notUploaded": {
+    "message": "Nie przesłano"
+  },
+  "notOffice": {
+    "message": "To nie jest plik Word, Excel ani PowerPoint."
+  },
+  "preparingFolder": {
+    "message": "Przygotowywanie folderu „{folder}”…"
+  },
+  "folderError": {
+    "message": "Nie udało się otworzyć folderu docelowego: {error}"
+  },
+  "uploadingMany_other": {
+    "message": "Przesyłanie plików ({n}). Nie zamykaj tego okna…"
+  },
+  "summaryFailed": {
+    "message": "Przesłano: {ok} z {total}. Błędy: {failed}."
+  },
+  "openedOne": {
+    "message": "Otwarto."
+  },
+  "openedAll_other": {
+    "message": "Otwarto pliki ({n})."
+  },
+  "allInFolder_other": {
+    "message": "Wszystkie pliki ({n}) są w folderze „{folder}”."
+  },
+  "allInDrive_other": {
+    "message": "Wszystkie pliki ({n}) są na Twoim Dysku Google."
+  },
+  "uploadedToFolder": {
+    "message": "Przesłano do „{folder}”."
+  },
+  "uploadedToDrive": {
+    "message": "Przesłano na Twój Dysk Google."
+  }
+}

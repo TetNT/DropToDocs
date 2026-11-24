@@ -1,0 +1,128 @@
+{
+  "extDescription": {
+    "message": "Word、Excel、PowerPoint ファイルをドロップして、Google ドキュメント、スプレッドシート、スライドで開きます。"
+  },
+  "locale": {
+    "message": "ja"
+  },
+  "signIn": {
+    "message": "Google でログイン"
+  },
+  "signInHint": {
+    "message": "ファイルは Google ドライブに追加され、Google ドキュメント、スプレッドシート、スライドで開きます。"
+  },
+  "signedInAs": {
+    "message": "{email} でログイン中"
+  },
+  "signOut": {
+    "message": "ログアウト"
+  },
+  "dropPrompt": {
+    "message": "クリックして選択、またはここにファイルをドロップ"
+  },
+  "dropTypes": {
+    "message": "Word、Excel、PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "アップロード後にファイルを開く"
+  },
+  "saveTo": {
+    "message": "保存先"
+  },
+  "folderPlaceholder": {
+    "message": "マイドライブ（最上位）"
+  },
+  "folderHint": {
+    "message": "マイドライブ内のフォルダ名。サブフォルダは / で区切ります。空欄にすると最上位に保存します。"
+  },
+  "openFolder": {
+    "message": "ドライブでフォルダを開く ↗"
+  },
+  "buyCoffee": {
+    "message": "コーヒーをおごる"
+  },
+  "sessionExpired": {
+    "message": "セッションの有効期限が切れました。もう一度ログインしてください。"
+  },
+  "driveAccessNeeded": {
+    "message": "ファイルを開くには Google ドライブへのアクセスが必要です。もう一度ログインして許可してください。"
+  },
+  "driveError": {
+    "message": "Google ドライブのエラー（{status}）"
+  },
+  "uploadFailed": {
+    "message": "アップロードに失敗しました（{status}）"
+  },
+  "storageUsed": {
+    "message": "{total} 中 {used} を使用"
+  },
+  "storageFree": {
+    "message": "空き {free}"
+  },
+  "storageFull": {
+    "message": "保存容量がいっぱいです"
+  },
+  "storageUsedOnly": {
+    "message": "{used} を使用"
+  },
+  "storageNoLimit": {
+    "message": "容量制限なし"
+  },
+  "storageTitle": {
+    "message": "Google のストレージはドライブ、Gmail、フォトで共有されます。"
+  },
+  "open": {
+    "message": "開く ↗"
+  },
+  "opened": {
+    "message": "開きました ↗"
+  },
+  "failed": {
+    "message": "失敗"
+  },
+  "waiting": {
+    "message": "待機中…"
+  },
+  "uploading": {
+    "message": "アップロード中…"
+  },
+  "skipped": {
+    "message": "スキップ"
+  },
+  "notUploaded": {
+    "message": "未アップロード"
+  },
+  "notOffice": {
+    "message": "Word、Excel、PowerPoint のファイルではありません。"
+  },
+  "preparingFolder": {
+    "message": "フォルダ「{folder}」を準備中…"
+  },
+  "folderError": {
+    "message": "保存先フォルダを開けませんでした: {error}"
+  },
+  "uploadingMany_other": {
+    "message": "{n} 件のファイルをアップロード中です。このウィンドウは開いたままにしてください…"
+  },
+  "summaryFailed": {
+    "message": "{total} 件中 {ok} 件をアップロードしました。{failed} 件が失敗しました。"
+  },
+  "openedOne": {
+    "message": "開きました。"
+  },
+  "openedAll_other": {
+    "message": "{n} 件のファイルをすべて開きました。"
+  },
+  "allInFolder_other": {
+    "message": "{n} 件のファイルはすべて「{folder}」にあります。"
+  },
+  "allInDrive_other": {
+    "message": "{n} 件のファイルはすべて Google ドライブにあります。"
+  },
+  "uploadedToFolder": {
+    "message": "「{folder}」にアップロードしました。"
+  },
+  "uploadedToDrive": {
+    "message": "Google ドライブにアップロードしました。"
+  }
+}

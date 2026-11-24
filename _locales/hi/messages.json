@@ -1,0 +1,140 @@
+{
+  "extDescription": {
+    "message": "Word, Excel या PowerPoint फ़ाइलें छोड़ें और उन्हें Google Docs, Sheets या Slides में खोलें।"
+  },
+  "locale": {
+    "message": "hi"
+  },
+  "signIn": {
+    "message": "Google से साइन इन करें"
+  },
+  "signInHint": {
+    "message": "फ़ाइलें आपकी Google Drive में जोड़ी जाती हैं और Google Docs, Sheets या Slides में खुलती हैं।"
+  },
+  "signedInAs": {
+    "message": "{email} से साइन इन किया गया"
+  },
+  "signOut": {
+    "message": "साइन आउट करें"
+  },
+  "dropPrompt": {
+    "message": "चुनने के लिए क्लिक करें या फ़ाइलें यहाँ छोड़ें"
+  },
+  "dropTypes": {
+    "message": "Word, Excel और PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "अपलोड के बाद फ़ाइलें खोलें"
+  },
+  "saveTo": {
+    "message": "यहाँ सहेजें"
+  },
+  "folderPlaceholder": {
+    "message": "मेरी ड्राइव (सबसे ऊपरी स्तर)"
+  },
+  "folderHint": {
+    "message": "मेरी ड्राइव में फ़ोल्डर का नाम। सबफ़ोल्डर के लिए / का उपयोग करें। सबसे ऊपरी स्तर के लिए खाली छोड़ें।"
+  },
+  "openFolder": {
+    "message": "Drive में फ़ोल्डर खोलें ↗"
+  },
+  "buyCoffee": {
+    "message": "मुझे एक कॉफ़ी पिलाएँ"
+  },
+  "sessionExpired": {
+    "message": "आपका सत्र समाप्त हो गया है। कृपया फिर से साइन इन करें।"
+  },
+  "driveAccessNeeded": {
+    "message": "फ़ाइलें खोलने के लिए Google Drive का ऐक्सेस ज़रूरी है। कृपया फिर से साइन इन करें और अनुमति दें।"
+  },
+  "driveError": {
+    "message": "Google Drive त्रुटि ({status})"
+  },
+  "uploadFailed": {
+    "message": "अपलोड नहीं हो सका ({status})"
+  },
+  "storageUsed": {
+    "message": "{total} में से {used} इस्तेमाल हुआ"
+  },
+  "storageFree": {
+    "message": "{free} खाली"
+  },
+  "storageFull": {
+    "message": "स्टोरेज भर गया है"
+  },
+  "storageUsedOnly": {
+    "message": "{used} इस्तेमाल हुआ"
+  },
+  "storageNoLimit": {
+    "message": "स्टोरेज की कोई सीमा नहीं"
+  },
+  "storageTitle": {
+    "message": "Google स्टोरेज Drive, Gmail और Photos के बीच शेयर होता है।"
+  },
+  "open": {
+    "message": "खोलें ↗"
+  },
+  "opened": {
+    "message": "खुल गई ↗"
+  },
+  "failed": {
+    "message": "विफल"
+  },
+  "waiting": {
+    "message": "इंतज़ार…"
+  },
+  "uploading": {
+    "message": "अपलोड हो रही है…"
+  },
+  "skipped": {
+    "message": "छोड़ी गई"
+  },
+  "notUploaded": {
+    "message": "अपलोड नहीं हुई"
+  },
+  "notOffice": {
+    "message": "यह Word, Excel या PowerPoint फ़ाइल नहीं है।"
+  },
+  "preparingFolder": {
+    "message": "फ़ोल्डर \"{folder}\" तैयार किया जा रहा है…"
+  },
+  "folderError": {
+    "message": "गंतव्य फ़ोल्डर नहीं खुल सका: {error}"
+  },
+  "uploadingMany_one": {
+    "message": "{n} फ़ाइल अपलोड हो रही है। यह विंडो खुली रखें…"
+  },
+  "uploadingMany_other": {
+    "message": "{n} फ़ाइलें अपलोड हो रही हैं। यह विंडो खुली रखें…"
+  },
+  "summaryFailed": {
+    "message": "{total} में से {ok} अपलोड हुईं। {failed} विफल रहीं।"
+  },
+  "openedOne": {
+    "message": "खुल गई।"
+  },
+  "openedAll_one": {
+    "message": "{n} फ़ाइल खुल गई।"
+  },
+  "openedAll_other": {
+    "message": "सभी {n} फ़ाइलें खुल गईं।"
+  },
+  "allInFolder_one": {
+    "message": "फ़ाइल \"{folder}\" में है।"
+  },
+  "allInFolder_other": {
+    "message": "सभी {n} फ़ाइलें \"{folder}\" में हैं।"
+  },
+  "allInDrive_one": {
+    "message": "फ़ाइल आपकी Google Drive में है।"
+  },
+  "allInDrive_other": {
+    "message": "सभी {n} फ़ाइलें आपकी Google Drive में हैं।"
+  },
+  "uploadedToFolder": {
+    "message": "\"{folder}\" में अपलोड हो गई।"
+  },
+  "uploadedToDrive": {
+    "message": "आपकी Google Drive में अपलोड हो गई।"
+  }
+}

@@ -65,6 +65,26 @@ The redirect URI is tied to the extension ID, so the ID must not change:
   permission justifications (`identity` for sign-in, `storage` for remembering
   the account, Google APIs host access for uploading).
 
+## Translations
+
+The popup is translated into 12 languages: English, Spanish, Portuguese (Brazil),
+French, German, Russian, Ukrainian, Polish, Japanese, Chinese (Simplified), Hindi
+and Indonesian. Chrome picks the language from the browser's UI setting and falls
+back to English.
+
+- All popup text lives in `_locales/<lang>/messages.json`. Elements in
+  `popup.html` name their message with `data-i18n` / `data-i18n-placeholder`;
+  `popup.js` uses `t('key', { name })` for text with `{name}` placeholders.
+- Text with a number uses plural forms: `key_one`, `key_few`, `key_many`,
+  `key_other`, chosen by `Intl.PluralRules` for the language's `locale` code
+  (in each messages file). Only `key_other` is required.
+- To add a language: copy `_locales/en/messages.json` to `_locales/<code>/`
+  (Chrome's locale codes, e.g. `it`, `ko`, `pt_PT`), translate the messages,
+  and set `locale` to its BCP 47 code (e.g. `it`, `pt-PT`).
+- Chrome Web Store descriptions for each language are in [store/](store/); paste
+  them into the Developer Dashboard (Store listing → language). The store's
+  short summary comes from `extDescription` in the messages files.
+
 ## Icon
 
 The icon is drawn by [tools/make_icons.py](tools/make_icons.py) (needs Python with

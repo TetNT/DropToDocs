@@ -1,0 +1,164 @@
+{
+  "extDescription": {
+    "message": "Перетащите файлы Word, Excel или PowerPoint и откройте их в Google Документах, Таблицах или Презентациях."
+  },
+  "locale": {
+    "message": "ru"
+  },
+  "signIn": {
+    "message": "Войти через Google"
+  },
+  "signInHint": {
+    "message": "Файлы загружаются на ваш Google Диск и открываются в Google Документах, Таблицах или Презентациях."
+  },
+  "signedInAs": {
+    "message": "Аккаунт: {email}"
+  },
+  "signOut": {
+    "message": "Выйти"
+  },
+  "dropPrompt": {
+    "message": "Нажмите, чтобы выбрать, или перетащите файлы сюда"
+  },
+  "dropTypes": {
+    "message": "Word, Excel и PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Открывать файлы после загрузки"
+  },
+  "saveTo": {
+    "message": "Сохранять в"
+  },
+  "folderPlaceholder": {
+    "message": "Мой диск (корневая папка)"
+  },
+  "folderHint": {
+    "message": "Название папки на Моём диске. Для вложенных папок используйте /. Оставьте пустым, чтобы сохранять в корневую папку."
+  },
+  "openFolder": {
+    "message": "Открыть папку на Диске ↗"
+  },
+  "buyCoffee": {
+    "message": "Угостить меня кофе"
+  },
+  "sessionExpired": {
+    "message": "Сеанс истёк. Войдите снова."
+  },
+  "driveAccessNeeded": {
+    "message": "Чтобы открывать файлы, нужен доступ к Google Диску. Войдите снова и разрешите доступ."
+  },
+  "driveError": {
+    "message": "Ошибка Google Диска ({status})"
+  },
+  "uploadFailed": {
+    "message": "Не удалось загрузить ({status})"
+  },
+  "storageUsed": {
+    "message": "Использовано {used} из {total}"
+  },
+  "storageFree": {
+    "message": "свободно {free}"
+  },
+  "storageFull": {
+    "message": "Хранилище заполнено"
+  },
+  "storageUsedOnly": {
+    "message": "Использовано {used}"
+  },
+  "storageNoLimit": {
+    "message": "без ограничения объёма"
+  },
+  "storageTitle": {
+    "message": "Хранилище Google общее для Диска, Gmail и Фото."
+  },
+  "open": {
+    "message": "Открыть ↗"
+  },
+  "opened": {
+    "message": "Открыт ↗"
+  },
+  "failed": {
+    "message": "Ошибка"
+  },
+  "waiting": {
+    "message": "Ожидание…"
+  },
+  "uploading": {
+    "message": "Загрузка…"
+  },
+  "skipped": {
+    "message": "Пропущен"
+  },
+  "notUploaded": {
+    "message": "Не загружен"
+  },
+  "notOffice": {
+    "message": "Это не файл Word, Excel или PowerPoint."
+  },
+  "preparingFolder": {
+    "message": "Подготовка папки «{folder}»…"
+  },
+  "folderError": {
+    "message": "Не удалось открыть папку назначения: {error}"
+  },
+  "uploadingMany_one": {
+    "message": "Загружается {n} файл. Не закрывайте это окно…"
+  },
+  "uploadingMany_few": {
+    "message": "Загружаются {n} файла. Не закрывайте это окно…"
+  },
+  "uploadingMany_many": {
+    "message": "Загружаются {n} файлов. Не закрывайте это окно…"
+  },
+  "uploadingMany_other": {
+    "message": "Загрузка файлов: {n}. Не закрывайте это окно…"
+  },
+  "summaryFailed": {
+    "message": "Загружено: {ok} из {total}. С ошибкой: {failed}."
+  },
+  "openedOne": {
+    "message": "Открыто."
+  },
+  "openedAll_one": {
+    "message": "Открыт {n} файл."
+  },
+  "openedAll_few": {
+    "message": "Открыто {n} файла."
+  },
+  "openedAll_many": {
+    "message": "Открыто {n} файлов."
+  },
+  "openedAll_other": {
+    "message": "Открыто файлов: {n}."
+  },
+  "allInFolder_one": {
+    "message": "{n} файл в папке «{folder}»."
+  },
+  "allInFolder_few": {
+    "message": "Все {n} файла в папке «{folder}»."
+  },
+  "allInFolder_many": {
+    "message": "Все {n} файлов в папке «{folder}»."
+  },
+  "allInFolder_other": {
+    "message": "Файлов в папке «{folder}»: {n}."
+  },
+  "allInDrive_one": {
+    "message": "{n} файл на вашем Google Диске."
+  },
+  "allInDrive_few": {
+    "message": "Все {n} файла на вашем Google Диске."
+  },
+  "allInDrive_many": {
+    "message": "Все {n} файлов на вашем Google Диске."
+  },
+  "allInDrive_other": {
+    "message": "Файлов на вашем Google Диске: {n}."
+  },
+  "uploadedToFolder": {
+    "message": "Загружено в «{folder}»."
+  },
+  "uploadedToDrive": {
+    "message": "Загружено на ваш Google Диск."
+  }
+}

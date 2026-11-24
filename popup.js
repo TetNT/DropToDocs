@@ -18,6 +18,30 @@ const LABELS = { document: 'Docs', spreadsheet: 'Sheets', presentation: 'Slides'
 const URL_PATHS = { document: 'document', spreadsheet: 'spreadsheets', presentation: 'presentation' };
 const PARALLEL_UPLOADS = 3;
 
+/* ---------- Translations ---------- */
+
+// Text lives in _locales/<lang>/messages.json; Chrome picks the language
+// from the browser's UI setting and falls back to English. Messages use
+// {name} placeholders, filled in here.
+const LOCALE = chrome.i18n.getMessage('locale') || 'en';
+const PLURALS = new Intl.PluralRules(LOCALE);
+
+function fill(msg, subs = {}) {
+  return msg.replace(/\{(\w+)\}/g, (m, k) => (k in subs ? subs[k] : m));
+}
+function t(key, subs) {
+  return fill(chrome.i18n.getMessage(key) || key, subs);
+}
+// Plural forms: key_one, key_few, key_many, key_other (as the language needs).
+function tn(key, n, subs = {}) {
+  const msg = chrome.i18n.getMessage(`${key}_${PLURALS.select(n)}`) || chrome.i18n.getMessage(`${key}_other`);
+  return fill(msg || key, { n, ...subs });
+}
+
+document.documentElement.lang = LOCALE;
+document.querySelectorAll('[data-i18n]').forEach((el) => { el.textContent = t(el.dataset.i18n); });
+document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => { el.placeholder = t(el.dataset.i18nPlaceholder); });
+
 const extOf = (name) => (name.match(/\.([^.]+)$/)?.[1] || '').toLowerCase();
 
 function spinner() {
@@ -45,7 +69,7 @@ function render(email) {
   currentEmail = email || null;
   signedOutEl.hidden = !!email;
   signedInEl.hidden = !email;
-  $('email').textContent = email ? `Signed in as ${email}` : '';
+  $('email').textContent = email ? t('signedInAs', { email }) : '';
   if (email) loadStorage();
   else $('storage').hidden = true;
 }
@@ -115,7 +139,7 @@ function getToken(refresh = false) {
     tokenPromise = (async () => {
       if (refresh) await send('invalidate');
       const { token } = await send('token');
-      if (!token) throw new SignedOutError('Your session expired. Please sign in again.');
+      if (!token) throw new SignedOutError(t('sessionExpired'));
       return token;
     })();
   }
@@ -137,7 +161,7 @@ async function driveJson(url, opts = {}) {
   if (res.status === 404) return null;
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.error?.message || `Google Drive error (${res.status})`);
+    throw new Error(err.error?.message || t('driveError', { status: res.status }));
   }
   return res.json();
 }
@@ -209,7 +233,7 @@ async function uploadWithRetry(file, kind, folderId) {
   }
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
-    throw new Error(err.error?.message || `Upload failed (${res.status})`);
+    throw new Error(err.error?.message || t('uploadFailed', { status: res.status }));
   }
   const { id, webViewLink } = await res.json();
   return webViewLink || `https://docs.google.com/${URL_PATHS[kind]}/d/${id}/edit`;
@@ -218,12 +242,15 @@ async function uploadWithRetry(file, kind, folderId) {
 /* ---------- Google storage display ---------- */
 
 // Google shows sizes in 1024-based units labelled GB, so do the same.
+// Intl gives the local unit names and decimal separator (e.g. "1,5 Go").
 function formatBytes(n) {
-  const units = ['B', 'KB', 'MB', 'GB', 'TB'];
+  const units = ['byte', 'kilobyte', 'megabyte', 'gigabyte', 'terabyte'];
   let i = 0;
   while (n >= 1024 && i < units.length - 1) { n /= 1024; i++; }
-  const digits = n >= 100 || i === 0 ? 0 : 1;
-  return `${n.toFixed(digits).replace(/\.0$/, '')} ${units[i]}`;
+  return new Intl.NumberFormat(LOCALE, {
+    style: 'unit', unit: units[i], unitDisplay: 'short',
+    maximumFractionDigits: n >= 100 || i === 0 ? 0 : 1,
+  }).format(n);
 }
 
 function fetchQuota(token) {
@@ -258,13 +285,13 @@ async function loadStorage() {
       if (ratio >= 0.95) box.classList.add('full');
       else if (ratio >= 0.8) box.classList.add('warn');
       const used = document.createElement('b');
-      used.textContent = `${formatBytes(usage)} of ${formatBytes(limit)} used`;
-      text.replaceChildren(used, ratio >= 1 ? ' · Storage full' : ` · ${formatBytes(free)} free`);
-      box.title = 'Google storage is shared by Drive, Gmail and Photos.';
+      used.textContent = t('storageUsed', { used: formatBytes(usage), total: formatBytes(limit) });
+      text.replaceChildren(used, ' · ', ratio >= 1 ? t('storageFull') : t('storageFree', { free: formatBytes(free) }));
+      box.title = t('storageTitle');
     } else {
       const used = document.createElement('b');
-      used.textContent = `${formatBytes(usage)} used`;
-      text.replaceChildren(used, ' · no storage limit');
+      used.textContent = t('storageUsedOnly', { used: formatBytes(usage) });
+      text.replaceChildren(used, ' · ', t('storageNoLimit'));
       box.title = '';
     }
     box.hidden = false;
@@ -297,12 +324,12 @@ function addRow(file, kind) {
     done(url, opened) {
       state.className = 'state';
       const btn = document.createElement('button');
-      btn.textContent = opened ? 'Opened ↗' : 'Open ↗';
+      btn.textContent = opened ? t('opened') : t('open');
       btn.addEventListener('click', () => chrome.tabs.create({ url }));
       state.replaceChildren(btn);
     },
     fail(message) {
-      this.set('Failed', true);
+      this.set(t('failed'), true);
       const detail = document.createElement('span');
       detail.className = 'detail';
       detail.textContent = message;
@@ -328,10 +355,10 @@ async function handleFiles(fileList) {
     const kind = KINDS[extOf(file.name)];
     const row = addRow(file, kind);
     if (kind) {
-      row.set('Waiting…');
+      row.set(t('waiting'));
       jobs.push({ file, kind, row });
     } else {
-      row.fail('Not a Word, Excel or PowerPoint file.');
+      row.fail(t('notOffice'));
     }
   }
   if (!jobs.length) return;
@@ -353,7 +380,7 @@ async function handleFiles(fileList) {
   let folderId = null;
   {
     const path = cleanFolderPath(folderInput.value);
-    if (path) setStatus(`Preparing folder "${path}"…`, false, true);
+    if (path) setStatus(t('preparingFolder', { folder: path }), false, true);
     try {
       folderId = await resolveDestination();
     } catch (e) {
@@ -362,21 +389,21 @@ async function handleFiles(fileList) {
         render(null);
         setStatus(e.message, true);
       } else {
-        for (const job of jobs) job.row.set('Not uploaded', true);
-        setStatus(`Couldn't open the destination folder: ${e.message}`, true);
+        for (const job of jobs) job.row.set(t('notUploaded'), true);
+        setStatus(t('folderError', { error: e.message }), true);
       }
       return;
     }
   }
 
-  setStatus(jobs.length > 1 ? `Uploading ${jobs.length} files. Keep this window open…` : 'Uploading…', false, true);
+  setStatus(jobs.length > 1 ? tn('uploadingMany', jobs.length) : t('uploading'), false, true);
 
   // Run a few uploads at a time.
   const queue = [...jobs];
   async function worker() {
     for (let job; (job = queue.shift()); ) {
-      if (signedOut) { job.row.set('Skipped', true); failed++; continue; }
-      job.row.set('Uploading…', false, true);
+      if (signedOut) { job.row.set(t('skipped'), true); failed++; continue; }
+      job.row.set(t('uploading'), false, true);
       try {
         const url = await uploadWithRetry(job.file, job.kind, folderId);
         if (shouldOpen) {
@@ -407,16 +434,17 @@ async function handleFiles(fileList) {
   }
   if (signedOut) {
     render(null);
-    setStatus('Your session expired. Please sign in again.', true);
+    setStatus(t('sessionExpired'), true);
   } else if (failed) {
-    setStatus(`${ok} of ${files.length} uploaded. ${failed} failed.`, true);
+    setStatus(t('summaryFailed', { ok, total: files.length, failed }), true);
   } else if (shouldOpen) {
     // Everything worked: jump to the first new tab (this closes the popup).
-    setStatus(ok > 1 ? `All ${ok} files opened.` : 'Opened.');
+    setStatus(ok > 1 ? tn('openedAll', ok) : t('openedOne'));
     if (openedTabs[0] !== undefined) chrome.tabs.update(openedTabs[0], { active: true });
   } else {
-    const where = folderId ? `"${cleanFolderPath(folderInput.value)}"` : 'your Google Drive';
-    setStatus(ok > 1 ? `All ${ok} files are in ${where}.` : `Uploaded to ${where}.`);
+    const folder = cleanFolderPath(folderInput.value);
+    if (folderId) setStatus(ok > 1 ? tn('allInFolder', ok, { folder }) : t('uploadedToFolder', { folder }));
+    else setStatus(ok > 1 ? tn('allInDrive', ok) : t('uploadedToDrive'));
   }
 }
 

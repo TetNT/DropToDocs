@@ -1,0 +1,128 @@
+{
+  "extDescription": {
+    "message": "Letakkan file Word, Excel, atau PowerPoint lalu buka di Google Dokumen, Spreadsheet, atau Slide."
+  },
+  "locale": {
+    "message": "id"
+  },
+  "signIn": {
+    "message": "Login dengan Google"
+  },
+  "signInHint": {
+    "message": "File ditambahkan ke Google Drive Anda dan dibuka di Google Dokumen, Spreadsheet, atau Slide."
+  },
+  "signedInAs": {
+    "message": "Login sebagai {email}"
+  },
+  "signOut": {
+    "message": "Logout"
+  },
+  "dropPrompt": {
+    "message": "Klik untuk memilih, atau letakkan file di sini"
+  },
+  "dropTypes": {
+    "message": "Word, Excel, dan PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Buka file setelah diupload"
+  },
+  "saveTo": {
+    "message": "Simpan ke"
+  },
+  "folderPlaceholder": {
+    "message": "Drive Saya (tingkat teratas)"
+  },
+  "folderHint": {
+    "message": "Nama folder di Drive Saya. Gunakan / untuk subfolder. Kosongkan untuk tingkat teratas."
+  },
+  "openFolder": {
+    "message": "Buka folder di Drive ↗"
+  },
+  "buyCoffee": {
+    "message": "Traktir saya kopi"
+  },
+  "sessionExpired": {
+    "message": "Sesi Anda telah berakhir. Silakan login lagi."
+  },
+  "driveAccessNeeded": {
+    "message": "Akses ke Google Drive diperlukan untuk membuka file. Silakan login lagi dan izinkan akses."
+  },
+  "driveError": {
+    "message": "Error Google Drive ({status})"
+  },
+  "uploadFailed": {
+    "message": "Upload gagal ({status})"
+  },
+  "storageUsed": {
+    "message": "{used} dari {total} terpakai"
+  },
+  "storageFree": {
+    "message": "{free} tersisa"
+  },
+  "storageFull": {
+    "message": "Penyimpanan penuh"
+  },
+  "storageUsedOnly": {
+    "message": "{used} terpakai"
+  },
+  "storageNoLimit": {
+    "message": "tanpa batas penyimpanan"
+  },
+  "storageTitle": {
+    "message": "Penyimpanan Google digunakan bersama oleh Drive, Gmail, dan Foto."
+  },
+  "open": {
+    "message": "Buka ↗"
+  },
+  "opened": {
+    "message": "Dibuka ↗"
+  },
+  "failed": {
+    "message": "Gagal"
+  },
+  "waiting": {
+    "message": "Menunggu…"
+  },
+  "uploading": {
+    "message": "Mengupload…"
+  },
+  "skipped": {
+    "message": "Dilewati"
+  },
+  "notUploaded": {
+    "message": "Tidak diupload"
+  },
+  "notOffice": {
+    "message": "Bukan file Word, Excel, atau PowerPoint."
+  },
+  "preparingFolder": {
+    "message": "Menyiapkan folder \"{folder}\"…"
+  },
+  "folderError": {
+    "message": "Tidak dapat membuka folder tujuan: {error}"
+  },
+  "uploadingMany_other": {
+    "message": "Mengupload {n} file. Biarkan jendela ini tetap terbuka…"
+  },
+  "summaryFailed": {
+    "message": "{ok} dari {total} berhasil diupload. {failed} gagal."
+  },
+  "openedOne": {
+    "message": "Dibuka."
+  },
+  "openedAll_other": {
+    "message": "Semua {n} file sudah dibuka."
+  },
+  "allInFolder_other": {
+    "message": "Semua {n} file ada di \"{folder}\"."
+  },
+  "allInDrive_other": {
+    "message": "Semua {n} file ada di Google Drive Anda."
+  },
+  "uploadedToFolder": {
+    "message": "Diupload ke \"{folder}\"."
+  },
+  "uploadedToDrive": {
+    "message": "Diupload ke Google Drive Anda."
+  }
+}

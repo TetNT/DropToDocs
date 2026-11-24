@@ -1,0 +1,39 @@
+Abre archivos de Word, Excel y PowerPoint en Documentos, Hojas de cálculo y Presentaciones de Google en un solo paso.
+
+DropToDocs convierte archivos de Office en archivos de Google sin el rodeo habitual por Google Drive. Haz clic en el icono de la barra de herramientas, suelta un archivo o varios a la vez y se abrirán en Documentos, Hojas de cálculo o Presentaciones de Google, listos para editar, compartir y comentar.
+
+CÓMO FUNCIONA
+1. Haz clic en el icono de DropToDocs e inicia sesión con tu cuenta de Google (solo la primera vez).
+2. Elige archivos o arrástralos a la ventana emergente. Puedes soltar varios a la vez.
+3. Cada archivo se sube a tu Google Drive, se convierte y se abre en una pestaña nueva.
+
+ARCHIVOS COMPATIBLES
+• Word (.doc, .docx) → Documentos de Google
+• Excel (.xls, .xlsx) → Hojas de cálculo de Google
+• PowerPoint (.ppt, .pptx) → Presentaciones de Google
+
+FUNCIONES
+• Subidas por lotes: suelta varios archivos y sigue el progreso de cada uno.
+• Elige dónde se guardan: en una carpeta "DropToDocs" de forma predeterminada, en la carpeta que quieras (con subcarpetas, p. ej. Trabajo/Importados) o en el nivel superior de Mi unidad.
+• Abrir automáticamente o no: desmarca "Abrir los archivos después de subirlos" para solo guardarlos en Drive, con un enlace rápido para abrir cada uno o la carpeta entera.
+• Consulta tu almacenamiento de Google: cuánto has usado y cuánto te queda, directamente en la ventana emergente.
+• Sesión siempre iniciada: inicias sesión una vez y listo.
+• Disponible en 12 idiomas, según el idioma de tu navegador.
+• Funciona en Chrome, Microsoft Edge, Brave y Opera.
+
+PRIVACIDAD DESDE EL DISEÑO
+• Tus archivos van directamente de tu navegador a tu propio Google Drive. DropToDocs no tiene servidores y tus archivos nunca pasan por terceros.
+• DropToDocs solo puede ver los archivos y carpetas que ha creado para ti. No puede leer, modificar ni eliminar nada más de tu Drive.
+• Sin analíticas, sin seguimiento, sin anuncios. Tus datos nunca se venden ni se comparten.
+• Cierra sesión cuando quieras desde la ventana emergente para retirar su acceso.
+
+GRATIS Y DE CÓDIGO ABIERTO
+DropToDocs es gratuito y de código abierto (licencia MIT).
+Código fuente: https://github.com/TetNT/DropToDocs
+Si te ahorra tiempo, puedes invitarme a un café: https://buymeacoffee.com/appinbound
+
+Sitio web: https://appinbound.com/DropToDocs/
+Política de privacidad (en inglés): https://appinbound.com/DropToDocs/privacy.html
+Preguntas o comentarios: softwaretet@gmail.com
+
+DropToDocs no está afiliado a Google ni a Microsoft ni cuenta con su respaldo. Documentos de Google, Hojas de cálculo de Google, Presentaciones de Google y Google Drive son marcas comerciales de Google LLC. Microsoft Word, Excel y PowerPoint son marcas comerciales de Microsoft Corporation.

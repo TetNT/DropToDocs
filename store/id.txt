@@ -1,0 +1,39 @@
+Buka file Word, Excel, dan PowerPoint di Google Dokumen, Spreadsheet, dan Slide dalam satu langkah.
+
+DropToDocs mengonversi file Office menjadi file Google tanpa harus memutar lewat Google Drive. Klik ikon di toolbar, letakkan satu file atau beberapa sekaligus, dan file akan terbuka di Google Dokumen, Spreadsheet, atau Slide, siap diedit, dibagikan, dan dikomentari.
+
+CARA KERJA
+1. Klik ikon DropToDocs dan login dengan Akun Google Anda (hanya pertama kali).
+2. Pilih file atau seret ke jendela pop-up. Anda bisa meletakkan beberapa file sekaligus.
+3. Setiap file diupload ke Google Drive Anda, dikonversi, lalu dibuka di tab baru.
+
+FILE YANG DIDUKUNG
+• Word (.doc, .docx) → Google Dokumen
+• Excel (.xls, .xlsx) → Google Spreadsheet
+• PowerPoint (.ppt, .pptx) → Google Slide
+
+FITUR
+• Upload sekaligus: letakkan beberapa file dan pantau progres masing-masing.
+• Pilih lokasi penyimpanan: folder "DropToDocs" secara default, nama folder apa pun yang Anda inginkan (dengan subfolder, misalnya Kerja/Impor), atau tingkat teratas Drive Saya.
+• Buka otomatis atau tidak: hapus centang "Buka file setelah diupload" untuk hanya menyimpan file di Drive, dengan link cepat untuk membuka tiap file atau seluruh folder.
+• Lihat penyimpanan Google Anda: berapa yang terpakai dan berapa yang tersisa, langsung di pop-up.
+• Tetap login: cukup login sekali.
+• Tersedia dalam 12 bahasa, mengikuti bahasa browser Anda.
+• Berfungsi di Chrome, Microsoft Edge, Brave, dan Opera.
+
+PRIVASI SEJAK AWAL
+• File Anda dikirim langsung dari browser ke Google Drive Anda sendiri. DropToDocs tidak memiliki server, dan file Anda tidak pernah melewati pihak lain.
+• DropToDocs hanya dapat melihat file dan folder yang dibuatnya untuk Anda. DropToDocs tidak dapat membaca, mengubah, atau menghapus apa pun lainnya di Drive Anda.
+• Tanpa analitik, tanpa pelacakan, tanpa iklan. Data Anda tidak pernah dijual atau dibagikan.
+• Logout kapan saja dari pop-up untuk mencabut aksesnya.
+
+GRATIS DAN OPEN SOURCE
+DropToDocs gratis dan open source (lisensi MIT).
+Kode sumber: https://github.com/TetNT/DropToDocs
+Jika ini menghemat waktu Anda, Anda bisa mentraktir saya kopi: https://buymeacoffee.com/appinbound
+
+Situs web: https://appinbound.com/DropToDocs/
+Kebijakan privasi (dalam bahasa Inggris): https://appinbound.com/DropToDocs/privacy.html
+Pertanyaan atau masukan: softwaretet@gmail.com
+
+DropToDocs tidak berafiliasi dengan atau didukung oleh Google maupun Microsoft. Google Dokumen, Google Spreadsheet, Google Slide, dan Google Drive adalah merek dagang Google LLC. Microsoft Word, Excel, dan PowerPoint adalah merek dagang Microsoft Corporation.

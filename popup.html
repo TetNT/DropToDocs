@@ -136,42 +136,42 @@
         <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/>
         <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/>
       </svg>
-      Sign in with Google
+      <span data-i18n="signIn">Sign in with Google</span>
     </button>
-    <p class="hint">Files are added to your Google Drive and opened in Docs, Sheets or Slides.</p>
+    <p class="hint" data-i18n="signInHint">Files are added to your Google Drive and opened in Docs, Sheets or Slides.</p>
   </section>
 
   <section id="signed-in" hidden>
     <div id="account">
       <span id="email"></span>
-      <button id="signout">Sign out</button>
+      <button id="signout" data-i18n="signOut">Sign out</button>
     </div>
     <div id="storage" hidden>
       <div class="bar"><div class="fill"></div></div>
       <span id="storage-text"></span>
     </div>
     <label id="drop">
-      Click to choose, or drop files here
-      <span class="types">Word, Excel and PowerPoint: .doc .docx .xls .xlsx .ppt .pptx</span>
+      <span data-i18n="dropPrompt">Click to choose, or drop files here</span>
+      <span class="types" data-i18n="dropTypes">Word, Excel and PowerPoint: .doc .docx .xls .xlsx .ppt .pptx</span>
       <input id="file" type="file" multiple accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,application/vnd.ms-excel,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-powerpoint,application/vnd.openxmlformats-officedocument.presentationml.presentation">
     </label>
     <label id="open-option">
       <input id="open-after" type="checkbox" checked>
-      Open files after upload
+      <span data-i18n="openAfter">Open files after upload</span>
     </label>
     <div id="save-to">
-      <label for="folder-name">Save to</label>
-      <input id="folder-name" type="text" maxlength="200" placeholder="My Drive (top level)" spellcheck="false"
+      <label for="folder-name" data-i18n="saveTo">Save to</label>
+      <input id="folder-name" type="text" maxlength="200" placeholder="My Drive (top level)" data-i18n-placeholder="folderPlaceholder" spellcheck="false"
              aria-describedby="folder-hint">
-      <p id="folder-hint" class="hint">Folder name in My Drive. Use / for subfolders. Leave empty for the top level.</p>
+      <p id="folder-hint" class="hint" data-i18n="folderHint">Folder name in My Drive. Use / for subfolders. Leave empty for the top level.</p>
     </div>
     <ul id="files"></ul>
-    <p id="folder-link" hidden><button id="open-folder">Open folder in Drive ↗</button></p>
+    <p id="folder-link" hidden><button id="open-folder" data-i18n="openFolder">Open folder in Drive ↗</button></p>
   </section>
 
   <div id="status"></div>
   <footer>
-    <a href="https://buymeacoffee.com/appinbound" target="_blank" rel="noopener">☕ Buy me a coffee</a>
+    <a href="https://buymeacoffee.com/appinbound" target="_blank" rel="noopener">☕ <span data-i18n="buyCoffee">Buy me a coffee</span></a>
   </footer>
   <script src="popup.js"></script>
 </body>

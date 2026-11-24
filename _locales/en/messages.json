@@ -1,0 +1,148 @@
+{
+  "extDescription": {
+    "message": "Drop Word, Excel or PowerPoint files and open them in Google Docs, Sheets or Slides.",
+    "description": "Extension description in the browser and Chrome Web Store summary. Max 132 characters."
+  },
+  "locale": {
+    "message": "en",
+    "description": "BCP 47 language code used for plural rules and number formatting. Not shown."
+  },
+  "signIn": {
+    "message": "Sign in with Google"
+  },
+  "signInHint": {
+    "message": "Files are added to your Google Drive and opened in Docs, Sheets or Slides."
+  },
+  "signedInAs": {
+    "message": "Signed in as {email}",
+    "description": "{email} is the Google account address."
+  },
+  "signOut": {
+    "message": "Sign out"
+  },
+  "dropPrompt": {
+    "message": "Click to choose, or drop files here"
+  },
+  "dropTypes": {
+    "message": "Word, Excel and PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Open files after upload"
+  },
+  "saveTo": {
+    "message": "Save to"
+  },
+  "folderPlaceholder": {
+    "message": "My Drive (top level)"
+  },
+  "folderHint": {
+    "message": "Folder name in My Drive. Use / for subfolders. Leave empty for the top level."
+  },
+  "openFolder": {
+    "message": "Open folder in Drive ↗"
+  },
+  "buyCoffee": {
+    "message": "Buy me a coffee"
+  },
+  "sessionExpired": {
+    "message": "Your session expired. Please sign in again."
+  },
+  "driveAccessNeeded": {
+    "message": "Google Drive access is needed to open files. Please sign in again and allow it."
+  },
+  "driveError": {
+    "message": "Google Drive error ({status})"
+  },
+  "uploadFailed": {
+    "message": "Upload failed ({status})"
+  },
+  "storageUsed": {
+    "message": "{used} of {total} used",
+    "description": "{used} and {total} are sizes like \"2.1 GB\"."
+  },
+  "storageFree": {
+    "message": "{free} free"
+  },
+  "storageFull": {
+    "message": "Storage full"
+  },
+  "storageUsedOnly": {
+    "message": "{used} used"
+  },
+  "storageNoLimit": {
+    "message": "no storage limit"
+  },
+  "storageTitle": {
+    "message": "Google storage is shared by Drive, Gmail and Photos."
+  },
+  "open": {
+    "message": "Open ↗"
+  },
+  "opened": {
+    "message": "Opened ↗"
+  },
+  "failed": {
+    "message": "Failed"
+  },
+  "waiting": {
+    "message": "Waiting…"
+  },
+  "uploading": {
+    "message": "Uploading…"
+  },
+  "skipped": {
+    "message": "Skipped"
+  },
+  "notUploaded": {
+    "message": "Not uploaded"
+  },
+  "notOffice": {
+    "message": "Not a Word, Excel or PowerPoint file."
+  },
+  "preparingFolder": {
+    "message": "Preparing folder \"{folder}\"…",
+    "description": "{folder} is the folder path the user typed."
+  },
+  "folderError": {
+    "message": "Couldn't open the destination folder: {error}",
+    "description": "{error} is an error message from Google, usually in English."
+  },
+  "uploadingMany_one": {
+    "message": "Uploading {n} file. Keep this window open…"
+  },
+  "uploadingMany_other": {
+    "message": "Uploading {n} files. Keep this window open…",
+    "description": "{n} is the number of files (always 2 or more)."
+  },
+  "summaryFailed": {
+    "message": "{ok} of {total} uploaded. {failed} failed.",
+    "description": "Shown when some uploads failed."
+  },
+  "openedOne": {
+    "message": "Opened."
+  },
+  "openedAll_one": {
+    "message": "{n} file opened."
+  },
+  "openedAll_other": {
+    "message": "All {n} files opened."
+  },
+  "allInFolder_one": {
+    "message": "The file is in \"{folder}\"."
+  },
+  "allInFolder_other": {
+    "message": "All {n} files are in \"{folder}\"."
+  },
+  "allInDrive_one": {
+    "message": "The file is in your Google Drive."
+  },
+  "allInDrive_other": {
+    "message": "All {n} files are in your Google Drive."
+  },
+  "uploadedToFolder": {
+    "message": "Uploaded to \"{folder}\"."
+  },
+  "uploadedToDrive": {
+    "message": "Uploaded to your Google Drive."
+  }
+}

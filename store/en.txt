@@ -1,0 +1,39 @@
+Open Word, Excel and PowerPoint files in Google Docs, Sheets and Slides, in one step.
+
+DropToDocs converts Office files to Google files without the usual detour through Google Drive. Click the toolbar icon, drop in one file or a whole batch, and they open in Google Docs, Sheets or Slides, ready to edit, share and comment on.
+
+HOW IT WORKS
+1. Click the DropToDocs icon and sign in with your Google account (only the first time).
+2. Choose files, or drag them into the popup. You can drop several at once.
+3. Each file is uploaded to your Google Drive, converted, and opened in a new tab.
+
+SUPPORTED FILES
+• Word (.doc, .docx) → Google Docs
+• Excel (.xls, .xlsx) → Google Sheets
+• PowerPoint (.ppt, .pptx) → Google Slides
+
+FEATURES
+• Batch uploads: drop several files and see the progress of each one.
+• Choose where files go: a "DropToDocs" folder by default, any folder name you like (with subfolders, e.g. Work/Imports), or the top level of My Drive.
+• Open automatically, or not: untick "Open files after upload" to just save files to Drive, with a quick link to open each one or the whole folder.
+• See your Google storage: how much is used and how much is free, right in the popup.
+• Stays signed in: you sign in once, and that's it.
+• Available in 12 languages, following your browser's language.
+• Works in Chrome, Microsoft Edge, Brave and Opera.
+
+PRIVATE BY DESIGN
+• Your files go straight from your browser to your own Google Drive. DropToDocs has no servers, and your files never pass through anyone else.
+• DropToDocs can only see files and folders it created for you. It cannot read, change or delete anything else in your Drive.
+• No analytics, no tracking, no ads. Your data is never sold or shared.
+• Sign out at any time from the popup to remove its access.
+
+FREE AND OPEN SOURCE
+DropToDocs is free and open source (MIT license).
+Source code: https://github.com/TetNT/DropToDocs
+If it saves you time, you can buy me a coffee: https://buymeacoffee.com/appinbound
+
+Website: https://appinbound.com/DropToDocs/
+Privacy policy: https://appinbound.com/DropToDocs/privacy.html
+Questions or feedback: softwaretet@gmail.com
+
+DropToDocs is not affiliated with or endorsed by Google or Microsoft. Google Docs, Google Sheets, Google Slides and Google Drive are trademarks of Google LLC. Microsoft Word, Excel and PowerPoint are trademarks of Microsoft Corporation.

@@ -24,6 +24,7 @@ def main() -> None:
         sys.exit('config.js still has the placeholder client ID; add the real one first.')
 
     files = FILES + [f'icons/icon{s}.png' for s in ICON_SIZES]
+    files += sorted(p.relative_to(ROOT).as_posix() for p in (ROOT / '_locales').glob('*/messages.json'))
     missing = [f for f in files if not (ROOT / f).is_file()]
     if missing:
         sys.exit(f'Missing files: {", ".join(missing)}')

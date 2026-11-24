@@ -1,0 +1,140 @@
+{
+  "extDescription": {
+    "message": "Word-, Excel- oder PowerPoint-Dateien ablegen und in Google Docs, Tabellen oder Präsentationen öffnen."
+  },
+  "locale": {
+    "message": "de"
+  },
+  "signIn": {
+    "message": "Über Google anmelden"
+  },
+  "signInHint": {
+    "message": "Dateien werden in Ihr Google Drive hochgeladen und in Google Docs, Tabellen oder Präsentationen geöffnet."
+  },
+  "signedInAs": {
+    "message": "Angemeldet als {email}"
+  },
+  "signOut": {
+    "message": "Abmelden"
+  },
+  "dropPrompt": {
+    "message": "Klicken zum Auswählen oder Dateien hier ablegen"
+  },
+  "dropTypes": {
+    "message": "Word, Excel und PowerPoint: .doc .docx .xls .xlsx .ppt .pptx"
+  },
+  "openAfter": {
+    "message": "Dateien nach dem Hochladen öffnen"
+  },
+  "saveTo": {
+    "message": "Speichern in"
+  },
+  "folderPlaceholder": {
+    "message": "Meine Ablage (oberste Ebene)"
+  },
+  "folderHint": {
+    "message": "Ordnername in „Meine Ablage“. Unterordner mit / trennen. Leer lassen für die oberste Ebene."
+  },
+  "openFolder": {
+    "message": "Ordner in Drive öffnen ↗"
+  },
+  "buyCoffee": {
+    "message": "Einen Kaffee spendieren"
+  },
+  "sessionExpired": {
+    "message": "Ihre Sitzung ist abgelaufen. Bitte melden Sie sich erneut an."
+  },
+  "driveAccessNeeded": {
+    "message": "Zum Öffnen von Dateien ist Zugriff auf Google Drive nötig. Bitte melden Sie sich erneut an und erlauben Sie den Zugriff."
+  },
+  "driveError": {
+    "message": "Google Drive-Fehler ({status})"
+  },
+  "uploadFailed": {
+    "message": "Hochladen fehlgeschlagen ({status})"
+  },
+  "storageUsed": {
+    "message": "{used} von {total} belegt"
+  },
+  "storageFree": {
+    "message": "{free} frei"
+  },
+  "storageFull": {
+    "message": "Speicher voll"
+  },
+  "storageUsedOnly": {
+    "message": "{used} belegt"
+  },
+  "storageNoLimit": {
+    "message": "kein Speicherlimit"
+  },
+  "storageTitle": {
+    "message": "Der Google-Speicher wird von Drive, Gmail und Fotos gemeinsam genutzt."
+  },
+  "open": {
+    "message": "Öffnen ↗"
+  },
+  "opened": {
+    "message": "Geöffnet ↗"
+  },
+  "failed": {
+    "message": "Fehler"
+  },
+  "waiting": {
+    "message": "Wartet…"
+  },
+  "uploading": {
+    "message": "Wird hochgeladen…"
+  },
+  "skipped": {
+    "message": "Übersprungen"
+  },
+  "notUploaded": {
+    "message": "Nicht hochgeladen"
+  },
+  "notOffice": {
+    "message": "Keine Word-, Excel- oder PowerPoint-Datei."
+  },
+  "preparingFolder": {
+    "message": "Ordner „{folder}“ wird vorbereitet…"
+  },
+  "folderError": {
+    "message": "Zielordner konnte nicht geöffnet werden: {error}"
+  },
+  "uploadingMany_one": {
+    "message": "{n} Datei wird hochgeladen. Lassen Sie dieses Fenster geöffnet…"
+  },
+  "uploadingMany_other": {
+    "message": "{n} Dateien werden hochgeladen. Lassen Sie dieses Fenster geöffnet…"
+  },
+  "summaryFailed": {
+    "message": "{ok} von {total} hochgeladen. {failed} fehlgeschlagen."
+  },
+  "openedOne": {
+    "message": "Geöffnet."
+  },
+  "openedAll_one": {
+    "message": "{n} Datei geöffnet."
+  },
+  "openedAll_other": {
+    "message": "Alle {n} Dateien geöffnet."
+  },
+  "allInFolder_one": {
+    "message": "Die Datei liegt in „{folder}“."
+  },
+  "allInFolder_other": {
+    "message": "Alle {n} Dateien liegen in „{folder}“."
+  },
+  "allInDrive_one": {
+    "message": "Die Datei liegt in Ihrem Google Drive."
+  },
+  "allInDrive_other": {
+    "message": "Alle {n} Dateien liegen in Ihrem Google Drive."
+  },
+  "uploadedToFolder": {
+    "message": "In „{folder}“ hochgeladen."
+  },
+  "uploadedToDrive": {
+    "message": "In Ihr Google Drive hochgeladen."
+  }
+}
